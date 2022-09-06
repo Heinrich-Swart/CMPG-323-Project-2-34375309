@@ -11,48 +11,48 @@ namespace _34375309_Project2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Dev_Controller : ControllerBase
+    public class Category_Controller : ControllerBase
     {
         private readonly HSProjectdbdevContext _context;
 
-        public Dev_Controller(HSProjectdbdevContext context)
+        public Category_Controller(HSProjectdbdevContext context)
         {
             _context = context;
         }
 
-        // GET: api/Dev_
+        // GET: api/Cat_
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Device>>> GetDevice()
+        public async Task<ActionResult<IEnumerable<Models.Category>>> GetCategory()
         {
-            return await _context.Device.ToListAsync();
+            return await _context.Category.ToListAsync();
         }
 
-        // GET: api/Dev_/5
+        // GET: api/Cat_/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Device>> GetDevice(Guid id)
+        public async Task<ActionResult<Models.Category>> GetCategory(Guid id)
         {
-            var device = await _context.Device.FindAsync(id);
+            var category = await _context.Category.FindAsync(id);
 
-            if (device == null)
+            if (category == null)
             {
                 return NotFound();
             }
 
-            return device;
+            return category;
         }
 
-        // PUT: api/Dev_/5
+        // PUT: api/Cat_/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDevice(Guid id, Device device)
+        public async Task<IActionResult> PutCategory(Guid id, Models.Category category)
         {
-            if (id != device.DeviceId)
+            if (id != category.CategoryId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(device).State = EntityState.Modified;
+            _context.Entry(category).State = EntityState.Modified;
 
             try
             {
@@ -60,7 +60,7 @@ namespace _34375309_Project2.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!DeviceExists(id))
+                if (!CategoryExists(id))
                 {
                     return NotFound();
                 }
@@ -73,20 +73,20 @@ namespace _34375309_Project2.Controllers
             return NoContent();
         }
 
-        // POST: api/Dev_
+        // POST: api/Cat_
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Device>> PostDevice(Device device)
+        public async Task<ActionResult<Models.Category>> PostCategory(Models.Category category)
         {
-            _context.Device.Add(device);
+            _context.Category.Add(category);
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
-                if (DeviceExists(device.DeviceId))
+                if (CategoryExists(category.CategoryId))
                 {
                     return Conflict();
                 }
@@ -96,28 +96,28 @@ namespace _34375309_Project2.Controllers
                 }
             }
 
-            return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
+            return CreatedAtAction("GetCategory", new { id = category.CategoryId }, category);
         }
 
-        // DELETE: api/Dev_/5
+        // DELETE: api/Cat_/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Device>> DeleteDevice(Guid id)
+        public async Task<ActionResult<Models.Category>> DeleteCategory(Guid id)
         {
-            var device = await _context.Device.FindAsync(id);
-            if (device == null)
+            var category = await _context.Category.FindAsync(id);
+            if (category == null)
             {
                 return NotFound();
             }
 
-            _context.Device.Remove(device);
+            _context.Category.Remove(category);
             await _context.SaveChangesAsync();
 
-            return device;
+            return category;
         }
 
-        private bool DeviceExists(Guid id)
+        private bool CategoryExists(Guid id)
         {
-            return _context.Device.Any(e => e.DeviceId == id);
+            return _context.Category.Any(e => e.CategoryId == id);
         }
     }
 }

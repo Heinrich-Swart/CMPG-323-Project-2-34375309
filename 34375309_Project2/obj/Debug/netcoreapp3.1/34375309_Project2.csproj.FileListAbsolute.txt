@@ -272,3 +272,9 @@ C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\
 C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\obj\Debug\netcoreapp3.1\34375309_Project2.dll
 C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\obj\Debug\netcoreapp3.1\34375309_Project2.pdb
 C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\obj\Debug\netcoreapp3.1\34375309_Project2.genruntimeconfig.cache
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Pielkop\Documents\GitHub\CMPG-323-Project-2-34375309\34375309_Project2\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
