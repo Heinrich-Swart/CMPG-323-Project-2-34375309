@@ -393,3 +393,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 Testing.txt
+*.json
+*.udl
