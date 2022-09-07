@@ -1,0 +1,4 @@
+*.json
+*.cs
+.vs/
+Testing.txt
