@@ -1,0 +1,5 @@
+*.json
+*.cs
+.vs/
+conn.udl
+Testing.txt
