@@ -8,5 +8,8 @@ Users can use the API to list when and where they use IoT devices in their day-t
 
 # Extra info
 
-I added an .gitignore file that hide everything for the program itself. I hid the .json files (appsetting.json -Has my password within the code, aswell as my connection string) and .cs files (Contains all of my data within the database, as some of the cs code contains passwords and sensitive data).
+I added an .gitignore file that hide everything for the program itself. I hid the .json files (appsetting.json -Has my password within the code, aswell as my connection string) and .cs files (Contains all of my data within the database, as some of the cs code contains passwords and sensitive data). (Scraped idea as there is no code to review)
 
+I added an new .gitignore from the internet that contains all of the files that can be traced and store passwords or sensitive data
+
+Updated my Scrum regarding project 2 (https://github.com/Heinrich-Swart/CMPG-323-Overview-34375309)
