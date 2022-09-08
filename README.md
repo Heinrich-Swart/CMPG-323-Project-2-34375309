@@ -13,3 +13,5 @@ I added an .gitignore file that hide everything for the program itself. I hid th
 I added an new .gitignore from the internet that contains all of the files that can be traced and store passwords or sensitive data
 
 Updated my Scrum regarding project 2 (https://github.com/Heinrich-Swart/CMPG-323-Overview-34375309)
+
+I am not sure if my authorize is working, as I do not know how to generate a token. I implemented the code for the authorize, but commented it out, so the databse can be tested without being authorized. 
