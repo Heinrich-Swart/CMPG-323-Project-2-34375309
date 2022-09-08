@@ -49,3 +49,5 @@ https://www.entityframeworktutorial.net/efcore/create-model-for-existing-databas
 https://www.youtube.com/watch?v=SnU4Ulee_NI&ab_channel=Computerix
 
 https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+Efundi Resourse
